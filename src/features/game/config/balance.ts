@@ -19,7 +19,7 @@ export const DIFFICULTY_TIERS: readonly DifficultyTier[] = [
     gondolaSize: { min: 6, max: 6 },
     listSize: { min: 1, max: 1 },
     trapCount: 0,
-    roundMs: 10_000,
+    roundMs: 12_000,
   },
   {
     fromRound: 4,
@@ -27,7 +27,7 @@ export const DIFFICULTY_TIERS: readonly DifficultyTier[] = [
     gondolaSize: { min: 8, max: 8 },
     listSize: { min: 2, max: 2 },
     trapCount: 1,
-    roundMs: 8_000,
+    roundMs: 10_000,
   },
   {
     fromRound: 8,
@@ -35,7 +35,7 @@ export const DIFFICULTY_TIERS: readonly DifficultyTier[] = [
     gondolaSize: { min: 10, max: 12 },
     listSize: { min: 2, max: 3 },
     trapCount: 2,
-    roundMs: 6_000,
+    roundMs: 8_000,
   },
   {
     fromRound: 13,
@@ -43,18 +43,18 @@ export const DIFFICULTY_TIERS: readonly DifficultyTier[] = [
     gondolaSize: { min: 12, max: 12 },
     listSize: { min: 3, max: 3 },
     trapCount: 3,
-    roundMs: 5_000,
+    roundMs: 7_000,
   },
 ] as const;
 
 export const SURVIVAL = {
   decayPerRoundMs: 100,
-  minRoundMs: 4_000,
+  minRoundMs: 5_000,
 } as const;
 
 export const BALANCE = {
   maxStrikes: 3,
-  telegraphMs: 1_600,
+  telegraphMs: 2_500,
   clearedPauseMs: 1_200,
   strikePauseMs: 1_100,
   tickMs: 100,
