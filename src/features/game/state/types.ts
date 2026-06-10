@@ -94,7 +94,14 @@ export interface Mistake {
   readonly fault: PickFault;
 }
 
-export type GamePhase = 'idle' | 'telegraph' | 'playing' | 'cleared' | 'timeUp' | 'gameOver';
+export type GamePhase =
+  | 'idle'
+  | 'tutorial'
+  | 'telegraph'
+  | 'playing'
+  | 'cleared'
+  | 'timeUp'
+  | 'gameOver';
 
 export interface PickFeedback {
   readonly seq: number;
@@ -121,6 +128,7 @@ export interface GameState {
 }
 
 export type GameAction =
+  | { readonly type: 'TUTORIAL_STARTED' }
   | { readonly type: 'GAME_STARTED'; readonly round: Round }
   | { readonly type: 'CLOCK_STARTED' }
   | { readonly type: 'CLOCK_TICKED'; readonly deltaMs: number }

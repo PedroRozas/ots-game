@@ -38,13 +38,21 @@ export const RESTRICTION_RULES: Record<RestrictionId, RestrictionRule> = {
 };
 
 export const RESTRICTION_META: Record<RestrictionId, RestrictionMeta> = {
-  vegan: { label: 'Vegano', emoji: '🌱', phrase: 'es vegano' },
-  vegetarian: { label: 'Vegetariano', emoji: '🥬', phrase: 'es vegetariano' },
-  celiac: { label: 'Celíaco', emoji: '🌾', phrase: 'es celíaco' },
+  vegan: { label: 'Vegano', emoji: '🌱', phrase: 'sigue dieta vegana' },
+  vegetarian: { label: 'Vegetariano', emoji: '🥬', phrase: 'sigue dieta vegetariana' },
+  celiac: { label: 'Celíaco', emoji: '🌾', phrase: 'tiene celiaquía' },
   milkAllergy: { label: 'APLV', emoji: '🥛', phrase: 'tiene alergia a la proteína de la leche' },
-  lactoseIntolerant: { label: 'Sin lactosa', emoji: '💧', phrase: 'es intolerante a la lactosa' },
+  lactoseIntolerant: {
+    label: 'Sin lactosa',
+    emoji: '💧',
+    phrase: 'tiene intolerancia a la lactosa',
+  },
   diabetic: { label: 'Diabético', emoji: '🍬', phrase: 'vive con diabetes' },
-  nutAllergy: { label: 'Sin frutos secos', emoji: '🥜', phrase: 'es alérgico a los frutos secos' },
+  nutAllergy: {
+    label: 'Sin frutos secos',
+    emoji: '🥜',
+    phrase: 'tiene alergia a los frutos secos',
+  },
 };
 
 export const REDUNDANT_RESTRICTION_PAIRS: readonly (readonly [RestrictionId, RestrictionId])[] = [

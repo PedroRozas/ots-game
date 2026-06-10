@@ -5,9 +5,10 @@ import styles from './StartScreen.module.css';
 interface StartScreenProps {
   readonly bestScore: number;
   readonly onPlay: () => void;
+  readonly onTutorial: () => void;
 }
 
-export function StartScreen({ bestScore, onPlay }: StartScreenProps) {
+export function StartScreen({ bestScore, onPlay, onTutorial }: StartScreenProps) {
   return (
     <div className={styles.screen}>
       <motion.div
@@ -58,7 +59,15 @@ export function StartScreen({ bestScore, onPlay }: StartScreenProps) {
           para multiplicar puntos.
         </span>
       </motion.div>
-      <Button onClick={onPlay}>▶ JUGAR</Button>
+      <div className={styles.actions}>
+        <Button onClick={onPlay}>▶ JUGAR</Button>
+        <Button onClick={onTutorial} variant="secondary">
+          🎓 Tutorial
+        </Button>
+      </div>
+      {bestScore === 0 ? (
+        <p className={styles.firstTimeHint}>¿Primera vez? Parte por el tutorial: son 30 segundos.</p>
+      ) : null}
       <a
         href="https://okto.shop"
         target="_blank"

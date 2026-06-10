@@ -50,7 +50,7 @@ function ForbiddenIcons({ entries, featured }: { entries: ForbiddenEntry[]; feat
             <AttributeIcon
               attribute={entry.attribute}
               variant={entry.isTrace ? 'trace' : 'solid'}
-              size={featured ? 'large' : 'small'}
+              size={featured ? 'large' : 'medium'}
             />
           </span>
           {featured ? <span className={styles.forbiddenName}>{entry.label}</span> : null}

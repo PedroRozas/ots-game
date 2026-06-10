@@ -6,6 +6,7 @@ import { gameReducer } from './features/game/state/reducer.ts';
 import { GameOverScreen } from './features/game/screens/GameOverScreen.tsx';
 import { GameScreen } from './features/game/screens/GameScreen.tsx';
 import { StartScreen } from './features/game/screens/StartScreen.tsx';
+import { TutorialScreen } from './features/game/screens/TutorialScreen.tsx';
 
 export function App() {
   const [state, dispatch] = useReducer(gameReducer, undefined, createInitialState);
@@ -16,7 +17,18 @@ export function App() {
   };
 
   if (state.phase === 'idle') {
-    return <StartScreen bestScore={state.bestScore} onPlay={startGame} />;
+    return (
+      <StartScreen
+        bestScore={state.bestScore}
+        onPlay={startGame}
+        onTutorial={() => dispatch({ type: 'TUTORIAL_STARTED' })}
+      />
+    );
+  }
+  if (state.phase === 'tutorial') {
+    return (
+      <TutorialScreen onPlay={startGame} onExit={() => dispatch({ type: 'WENT_HOME' })} />
+    );
   }
   if (state.phase === 'gameOver') {
     return (

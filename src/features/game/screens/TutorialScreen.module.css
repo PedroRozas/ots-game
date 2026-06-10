@@ -1,0 +1,97 @@
+.screen {
+  min-height: 100%;
+  max-width: var(--layout-max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  padding-bottom: 170px;
+}
+
+.practiceBadge {
+  align-self: center;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  color: var(--color-card);
+  background: var(--color-blue);
+  border: var(--border-thin);
+  border-radius: var(--radius-chip);
+  padding: var(--space-1) var(--space-4);
+  box-shadow: var(--shadow-pop-small);
+}
+
+.section {
+  transition:
+    opacity 250ms ease,
+    transform 250ms ease;
+}
+
+.dimmed {
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.focused {
+  transform: scale(1.02);
+}
+
+.gondola {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-3);
+  align-content: start;
+}
+
+.coach {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: var(--space-4);
+  margin-inline: auto;
+  width: min(calc(100% - 2 * var(--space-4)), calc(var(--layout-max-width) - 2 * var(--space-4)));
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  background: var(--color-card);
+  border: var(--border-bold);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-pop);
+  padding: var(--space-4);
+}
+
+.coachText {
+  font-size: 0.98rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.coachError {
+  color: var(--color-red-deep);
+}
+
+.coachActions {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.progress {
+  display: flex;
+  gap: var(--space-1);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-paper-deep);
+  border: 1px solid var(--color-ink-soft);
+}
+
+.dotActive {
+  background: var(--color-green);
+}

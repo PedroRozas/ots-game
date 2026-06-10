@@ -133,7 +133,7 @@ export function GameScreen({ state, dispatch }: GameScreenProps) {
         <span className={styles.peekBadge}>👁 VER</span>
       </button>
       <div className={styles.listRow}>
-        <span className={styles.listLabel}>LISTA</span>
+        <span className={styles.listLabel}>DEBE COMPRAR</span>
         <ShoppingList items={round.shoppingList} />
       </div>
       <div key={round.number} className={isDense ? `${styles.gondola} ${styles.dense}` : styles.gondola}>

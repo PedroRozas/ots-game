@@ -107,6 +107,8 @@ function reduceTick(state: GameState, deltaMs: number): GameState {
 
 export function gameReducer(state: GameState, action: GameAction): GameState {
   switch (action.type) {
+    case 'TUTORIAL_STARTED':
+      return { ...createInitialState(), bestScore: state.bestScore, phase: 'tutorial' };
     case 'GAME_STARTED':
       return startRound({ ...createInitialState(), bestScore: state.bestScore }, action.round);
     case 'CLOCK_STARTED':

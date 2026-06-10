@@ -7,14 +7,14 @@
 .item {
   display: inline-flex;
   align-items: center;
-  gap: var(--space-1);
+  gap: var(--space-2);
   font-weight: 700;
-  font-size: 0.85rem;
+  font-size: 1.05rem;
   background: var(--color-card);
   border: var(--border-thin);
   border-radius: var(--radius-chip);
-  padding: var(--space-1) var(--space-3);
-  box-shadow: var(--shadow-pressed);
+  padding: var(--space-2) var(--space-4);
+  box-shadow: var(--shadow-pop-small);
 }
 
 .fulfilled {

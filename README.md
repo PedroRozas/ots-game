@@ -6,6 +6,7 @@ Arcade contrarreloj inspirado (en tono de parodia) en OK to Shop: en cada ronda 
 
 ## Cómo jugar
 
+- **Tutorial:** modo práctica guiado, sin reloj ni strikes, para aprender a leer íconos, trazas y la lista.
 - **Telegrafía:** antes de cada ronda se presenta al cliente con sus restricciones (reloj congelado).
 - **Compra:** toca solo productos aptos para *todas* sus restricciones y de las categorías pendientes de la lista.
 - **Combo:** aciertos encadenados multiplican el puntaje; un error lo rompe y suma un strike.

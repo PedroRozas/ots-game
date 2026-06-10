@@ -110,7 +110,9 @@ export function GondolaCard({ product, index, isHit, feedback, onPick }: Gondola
       aria-label={product.name}
     >
       {isHit ? <span className={styles.hitBadge}>✓</span> : null}
-      {feedback?.outcome === 'hit' ? <PointsPop points={feedback.points} /> : null}
+      {feedback?.outcome === 'hit' && feedback.points > 0 ? (
+        <PointsPop points={feedback.points} />
+      ) : null}
       <span className={styles.emoji}>{product.emoji}</span>
       <span className={styles.name}>{product.name}</span>
       <ProductIcons product={product} guilty={guilty} />

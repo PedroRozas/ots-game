@@ -68,6 +68,10 @@
   display: flex;
   align-items: center;
   gap: var(--space-2);
+  background: var(--color-paper-deep);
+  border: var(--border-thin);
+  border-radius: var(--radius-card);
+  padding: var(--space-2) var(--space-3);
 }
 
 .briefingList {
