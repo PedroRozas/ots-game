@@ -1,0 +1,23 @@
+.combo {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--color-card);
+  background: var(--color-blue);
+  border: var(--border-thin);
+  border-radius: var(--radius-chip);
+  padding: 2px var(--space-3);
+  box-shadow: var(--shadow-pressed);
+}
+
+.idle {
+  background: var(--color-card);
+  color: var(--color-ink-soft);
+  box-shadow: none;
+}
+
+.hot {
+  background: var(--color-red);
+}

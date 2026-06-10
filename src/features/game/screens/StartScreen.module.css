@@ -1,0 +1,109 @@
+.screen {
+  min-height: 100%;
+  max-width: var(--layout-max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-5);
+  padding: var(--space-5);
+  text-align: center;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: calc(-1 * var(--space-3));
+}
+
+.brandLogo {
+  width: 76px;
+  height: 76px;
+  border: var(--border-bold);
+  border-radius: 20px;
+  box-shadow: var(--shadow-pop-small);
+}
+
+.brandText {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  color: var(--color-green-deep);
+  text-transform: uppercase;
+}
+
+.sign {
+  background: var(--color-red);
+  border: var(--border-bold);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-pop);
+  padding: var(--space-4) var(--space-6);
+  transform: rotate(-2deg);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 11vw, 3.6rem);
+  line-height: 0.95;
+  color: var(--color-card);
+  text-shadow: 3px 3px 0 var(--color-ink);
+}
+
+.subtitle {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--color-yellow);
+  letter-spacing: 0.08em;
+}
+
+.record {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  background: var(--color-yellow);
+  border: var(--border-thin);
+  border-radius: var(--radius-chip);
+  box-shadow: var(--shadow-pop-small);
+  padding: var(--space-2) var(--space-4);
+  transform: rotate(1.5deg);
+}
+
+.howTo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  background: var(--color-card);
+  border: var(--border-bold);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-pop-small);
+  padding: var(--space-4);
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.howToTitle {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.stepIcon {
+  font-size: 1.2rem;
+}
+
+.footerLink {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-green-deep);
+  text-decoration: none;
+  border-bottom: 2px dashed var(--color-green);
+}

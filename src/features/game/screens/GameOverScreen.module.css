@@ -1,0 +1,159 @@
+.screen {
+  min-height: 100%;
+  max-width: var(--layout-max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-5) var(--space-4);
+  text-align: center;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 9vw, 2.8rem);
+  color: var(--color-card);
+  background: var(--color-red);
+  border: var(--border-bold);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-pop);
+  padding: var(--space-3) var(--space-5);
+  transform: rotate(-1.5deg);
+  text-shadow: 2px 2px 0 var(--color-ink);
+}
+
+.scoreBox {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.scoreLabel {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--color-ink-soft);
+}
+
+.scoreValue {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.newBest {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  background: var(--color-yellow);
+  border: var(--border-thin);
+  border-radius: var(--radius-chip);
+  box-shadow: var(--shadow-pop-small);
+  padding: var(--space-2) var(--space-4);
+  transform: rotate(2deg);
+}
+
+.stats {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-ink-soft);
+}
+
+.lessons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  background: var(--color-card);
+  border: var(--border-bold);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-pop-small);
+  padding: var(--space-4);
+  text-align: left;
+}
+
+.lessonsTitle {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.lesson {
+  display: flex;
+  gap: var(--space-2);
+  align-items: flex-start;
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1.3;
+  border-top: 2px dashed var(--color-paper-deep);
+  padding-top: var(--space-2);
+}
+
+.lessonEmoji {
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.perfect {
+  font-weight: 700;
+  color: var(--color-green-deep);
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+.cta {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  background: var(--color-green);
+  border: var(--border-bold);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-pop-small);
+  padding: var(--space-4);
+  margin-top: var(--space-3);
+}
+
+.ctaLogo {
+  width: 56px;
+  height: 56px;
+  border: var(--border-thin);
+  border-radius: 14px;
+  box-shadow: var(--shadow-pressed);
+}
+
+.ctaText {
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-card);
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  color: var(--color-ink);
+  background: var(--color-yellow);
+  border: var(--border-bold);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-pop-small);
+  padding: var(--space-2) var(--space-4);
+  transition:
+    transform 80ms ease,
+    box-shadow 80ms ease;
+}
+
+.ctaButton:active {
+  transform: translate(2px, 2px);
+  box-shadow: var(--shadow-pressed);
+}

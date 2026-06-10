@@ -1,0 +1,47 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  border: 2px solid var(--color-ink);
+  border-radius: 8px;
+}
+
+.small {
+  width: 21px;
+  height: 21px;
+  border-radius: 6px;
+}
+
+.large {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+}
+
+.trace {
+  border-style: dashed;
+  background: var(--color-card);
+}
+
+.seal {
+  display: inline-flex;
+  flex-shrink: 0;
+}
+
+.highlighted {
+  animation: pulse-guilty 0.45s ease-in-out 3;
+  box-shadow: 0 0 0 3px var(--color-red);
+}
+
+@keyframes pulse-guilty {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.45);
+  }
+}

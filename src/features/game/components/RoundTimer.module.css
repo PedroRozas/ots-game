@@ -1,0 +1,45 @@
+.timer {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.track {
+  flex: 1;
+  height: 16px;
+  background: var(--color-card);
+  border: var(--border-thin);
+  border-radius: var(--radius-chip);
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  border-radius: var(--radius-chip);
+  transition:
+    width 100ms linear,
+    background-color 300ms ease;
+}
+
+.seconds {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  min-width: 2.2ch;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.urgent {
+  color: var(--color-red-deep);
+  animation: throb 0.5s ease-in-out infinite;
+}
+
+@keyframes throb {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.18);
+  }
+}

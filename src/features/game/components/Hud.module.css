@@ -1,0 +1,37 @@
+.hud {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.05;
+}
+
+.scoreLabel {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--color-ink-soft);
+}
+
+.scoreValue {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.round {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  color: var(--color-ink-soft);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
